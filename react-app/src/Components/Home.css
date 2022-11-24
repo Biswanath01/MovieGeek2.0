@@ -1,0 +1,162 @@
+.movie-body:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform .4s;
+}
+
+.home-body{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* margin: 2px; */
+}
+
+.similar-movie-body:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform .4s;
+}
+
+.similar-movie-grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.search-movie-grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:500px) {
+    .similar-movie-grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .home-body{
+        display: grid;
+        grid-template-columns: 100%;
+        /* margin: 2px; */
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:800px) {
+    .similar-movie-grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .home-body{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /* margin: 2px; */
+    }
+}
+
+.similar-movie-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+@media screen and (max-width:650px){
+    .movie-details-body{
+        flex-direction: column;
+        width: 100%;
+    }
+    .movie-details-image{
+        height: 250px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:800px){
+   
+    .movie-details-image{
+        height: 350px;
+        width: 100%;
+    }
+}
+
+
+.logo{
+    width: 70px;
+    margin:2%;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10%;
+}
+
+
+
+.addfavwatch{
+    transform: scale(1.2);
+    display: flex;
+    width: 25%;
+    margin:  20px;
+    padding:  10px;
+}
+
+@media screen and (max-width: 1100px){
+    .addfavwatch{
+        width: 50%;
+
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1100px){
+    .addfavwatch{
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .addfavwatch{
+        width: 80%;
+
+    }
+}
+
+.movie-geek{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px){
+    .movie-geek{
+        display: none;
+    }
+    .logo{
+        display: none;
+
+    }
+    /* .logout{
+        display: none;
+        width: 50px;
+    } */
+}
+
+
+@media screen and (max-width:1150px) {
+    .avatar-hide{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .movie-geek{
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .avatar-hide{
+        display: none;
+    } 
+}
+
